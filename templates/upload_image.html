@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+</head>
+<header class="page-header">
+  <h1>Human Protein Atlas - Single Cell Classification</h1>
+</header>
+<br>
+<br>
+<br>
+  <meta charset=utf-8 />
+  <title>Human Protein Atlas - Single Cell Classification</title>
+  <style>
+    h1 {text-align: center;}
+    body {
+        background-color: #E6E6FA;
+        display: block;
+        margin: 8px;
+    }  
+    div.container {
+      display:inline-block;
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+    p {
+      text-align:center;
+    }
+  </style>
+<body>
+  <div class="col-6" >
+        <label class="form-label" style="display: flex;justify-content: center;align-items: center;"> Veillez charger les images</label>
+<br>
+
+        <div style="display: flex;justify-content: center;align-items: center;">
+        <form action = "/uploader" method = "POST"
+                 enctype = "multipart/form-data"><br>
+                  
+                 <label for="file1">Image bleue </label><br>
+                 <input type = "file" name = "file1" accept=".jpg, .jpeg, .png"/><br><br>
+
+                 <label for="file2">Image verte </label><br>
+                 <input type = "file" name = "file2" accept=".jpg, .jpeg, .png"/><br><br>
+
+                 <label for="file3">Image rouge</label><br>
+                 <input type = "file" name = "file3" accept=".jpg, .jpeg, .png"/><br><br>
+
+                 <label for="file4" >Image  jaune </label><br>
+                 <input type = "file" name = "file4" accept=".jpg, .jpeg, .png"/><br><br>
+                 
+                 <div style="display: flex;justify-content: center;align-items: center;">
+                 <input class="btn btn-primary" type = "submit"/>
+                  </div>
+              </form>
+        </div>
+        <br><br><br>      
+  </div>
+  <footer>
+    <div class="row pad">
+        <div class="col-lg-12 text-center">
+            Copyright &copy; 2021 <strong>LICORNE</strong>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

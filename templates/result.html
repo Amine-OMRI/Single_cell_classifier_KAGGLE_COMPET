@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <a href="/">Accueil</a>
+    <header class="page-header">
+        <h1>Human Protein Atlas - Single Cell Classification</h1>
+    </header>
+    <br><br>
+    <meta charset=utf-8 />
+    <title>Human Protein Atlas - Single Cell Classification</title>
+    <style>
+        h1 {text-align: center;}
+        body {
+            background-color: #E6E6FA;
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 2px;
+        }
+        div.container {
+            display:inline-block;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        div.comment {
+            text-align:center;
+        }
+        p {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="container">
+        <img src="data:image/jpg;base64, {{composite}}" height="400" width="400" />
+        <img src="data:image/jpg;base64, {{composite_mask}}" height="400" width="400" />
+    </div>
+</div>
+<br>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="container">
+        <img src="data:image/jpg;base64, {{image_bleue}}" height="200" width="200" />
+        <p>Blue channel</p>
+    </div>
+    <div class="container">
+        <img class="middle-img" src="data:image/jpg;base64, {{image_verte}}" height="200" width="200" />
+        <p>Green channel</p>
+    </div>
+    <div class="container">
+        <img src="data:image/jpg;base64, {{image_rouge}}" height="200" width="200" />
+        <p>Red channel</p>
+    </div>
+    <div class="container">
+        <img src="data:image/jpg;base64, {{image_jaune}}" height="200" width="200" />
+        <p>Yellow channel</p>
+    </div>
+</div>
+<br><br><br>
+<div class="comment">
+    Prédiction : {{prediction}}
+</div>
+<div class="comment">
+    Confiance : {{confidence}} %
+</div>
+<br><br><br><br>
+</div>
+<footer>
+    <div class="row pad">
+        <div class="col-lg-12 text-center">
+            Copyright &copy; 2021 <strong>LICORNE</strong>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
